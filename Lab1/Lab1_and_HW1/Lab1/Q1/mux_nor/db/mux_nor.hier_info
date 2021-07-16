@@ -1,0 +1,22 @@
+|mux_nor
+A => mux:muxA.S1
+B => mux:muxB.S1
+Y << mux:muxA.y
+
+
+|mux_nor|mux:muxB
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_nor|mux:muxA
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

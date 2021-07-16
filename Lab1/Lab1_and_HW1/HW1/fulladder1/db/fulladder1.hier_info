@@ -1,0 +1,32 @@
+|fulladder1
+I1 => HALF_ADDER:h1.A
+I2 => HALF_ADDER:h1.B
+Cin => HALF_ADDER:h2.A
+S << HALF_ADDER:h2.S
+C << OR_2:o1.Y
+
+
+|fulladder1|HALF_ADDER:h1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder1|HALF_ADDER:h2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

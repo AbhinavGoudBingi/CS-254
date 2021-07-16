@@ -1,0 +1,50 @@
+|mux_halfadder
+A => mux:muxA.S1
+A => mux:muxA1.S1
+B => mux:muxB.S1
+B => mux:muxB1.S1
+B => mux:muxB2.S1
+S << mux:muxA.y
+C << mux:muxA1.y
+
+
+|mux_halfadder|mux:muxB
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_halfadder|mux:muxB1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_halfadder|mux:muxA
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_halfadder|mux:muxB2
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_halfadder|mux:muxA1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

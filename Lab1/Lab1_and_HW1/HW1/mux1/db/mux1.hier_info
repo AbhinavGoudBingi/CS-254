@@ -1,0 +1,31 @@
+|mux1
+I1 => AND_2:a1.B
+I2 => AND_2:a2.B
+Cin => INVERTER:n1.A
+Cin => AND_2:a2.A
+Y <= OR_2:o1.Y
+
+
+|mux1|INVERTER:n1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux1|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,109 @@
+|mux_fulladder
+A => mux:muxA.S1
+A => mux:muxA1.S1
+B => mux:muxB.S1
+B => mux:muxB1.S1
+B => mux:muxB2.S1
+Cin => mux:muxX.S1
+Cin => mux:muxX1.S1
+Cin => mux:muxX2.S1
+S << mux:muxY.y
+C << mux:muxQ.y
+
+
+|mux_fulladder|mux:muxB
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxB1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxA
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxB2
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxA1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxX
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxX1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxY
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxX2
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxY1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxP
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_fulladder|mux:muxQ
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

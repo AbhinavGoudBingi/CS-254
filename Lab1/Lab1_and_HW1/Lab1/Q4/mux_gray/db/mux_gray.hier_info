@@ -1,0 +1,69 @@
+|mux_gray
+B2 => mux:muxX1.S1
+B2 => mux:muxX12.S1
+B2 => mux:muxG2.S1
+B1 => mux:muxX13.S1
+B1 => mux:muxA.S1
+B0 => mux:muxB.S1
+B0 => mux:muxB1.S1
+G2 << mux:muxG2.y
+G1 << mux:muxX13.y
+G0 << mux:muxA.y
+
+
+|mux_gray|mux:muxX1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_gray|mux:muxX12
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_gray|mux:muxX13
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_gray|mux:muxB
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_gray|mux:muxB1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_gray|mux:muxA
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_gray|mux:muxG2
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

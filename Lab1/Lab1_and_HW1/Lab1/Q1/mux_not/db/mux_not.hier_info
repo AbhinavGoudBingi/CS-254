@@ -1,0 +1,13 @@
+|mux_not
+A => mux:mux1.S1
+Y << mux:mux1.y
+
+
+|mux_not|mux:mux1
+I0 => y.IN0
+I1 => y.IN0
+S1 => y.IN1
+S1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
